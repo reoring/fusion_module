@@ -1,0 +1,18 @@
+{
+    "name": "reoring/fusion_module",
+    "description": "",
+    "keywords": [],
+    "homepage": "https://github.com/reoring/fusion_module",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.5"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "Reoring\\FusionModule": "src/"
+        }
+    }
+}
