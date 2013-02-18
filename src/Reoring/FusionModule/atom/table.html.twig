@@ -1,0 +1,27 @@
+<table border="1" id="table">
+    <thead>
+        <tr>
+            {% for col in columns %}
+                <td>{{ col }}</td>
+            {% endfor %}
+        </tr>
+    </thead>
+
+    <tbody>
+    {% for row in rows %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+        </tr>
+    {% else %}
+        <p>nodata</p>
+    {% endfor %}
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td><input type="text"/></td>
+            <td><input type="text"/></td>
+        </tr>
+    </tfoot>
+</table>
