@@ -42,7 +42,9 @@ class GridModule implements ModuleProtocol
 
     public function getManifest()
     {
-        return ['http' => ['update' => ['url' => '/grid/update', 'dispatch' => '\Reoring\FusionModule\Model\Data::update']]];
+        return ['http' => ['update' =>
+                              ['url'      => '/grid/update',
+                               'dispatch' => '\Reoring\FusionModule\Model\Data::update']]];
     }
 
     /**

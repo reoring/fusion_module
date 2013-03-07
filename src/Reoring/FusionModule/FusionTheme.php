@@ -38,6 +38,10 @@ class FusionTheme
         $renderer->setLayout($tpl);
 
         foreach ($outputs as $moduleId => $atomOutput) {
+            if ($atomOutput === null) {
+                continue;
+            }
+
             foreach ($atomOutput->get() as $name => $atom) {
                 $renderer->buffering($moduleId . '.' . $name, $atom->getContents());
             }
